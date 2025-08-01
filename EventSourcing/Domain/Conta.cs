@@ -52,6 +52,8 @@ public class Conta
                 Saldo -= e.Valor;
                 break;
         }
+        //
+        Console.WriteLine($"{Titular} está com {Saldo} de saldo na versão {Versao}");
     }
 
     public static Conta LoadFromHistory(IEnumerable<Event> history)
